@@ -71,7 +71,7 @@ public class Controller implements Initializable {
             double y1 = height/2 + radius*Math.cos(Math.toRadians(((i*N)%n)*k));
             Line line = new Line(x, y, x1, y1);
             line.setStroke(lColor);
-            Circle cir = new Circle(x, y, 1);
+            Circle cir = new Circle(x, y, 1.5);
             cir.setFill(pColor);
             pane.getChildren().addAll(line, cir);
         }
@@ -108,8 +108,6 @@ public class Controller implements Initializable {
                 c1 = Color.rgb(255, 0, 255-s);
             }
             line.setStroke(c1);
-            Circle cir = new Circle(x, y, 1);
-            cir.setFill(pColor);
             pane.getChildren().addAll(line);
         }
     }
@@ -146,8 +144,6 @@ public class Controller implements Initializable {
                 c1 = Color.rgb(255, 0, 255-s);
             }
             line.setStroke(c1);
-            Circle cir = new Circle(x, y, 1);
-            cir.setFill(pColor);
             pane.getChildren().addAll(line);
         }
     }
